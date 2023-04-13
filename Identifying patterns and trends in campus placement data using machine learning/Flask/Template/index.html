@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+  </head>
+  <body>
+      <section id="hero" class="d-flex flext-column justify-content-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-8">
+<h1>Identifying Patterns And Trends In Campus Placement Data using Machine Learning</h1>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="about">
+<div class=container>
+<div class="section-title">
+<h2>Fill the details</h2>
+</div>
+<div class="row content">
+<div class="first">
+<form action="{{ url_for('y_predict')}}"method="POST">
+<input type="number" id="sen1" name="sen1" placeholder="Age">
+<input type="number" id="sen2" name="sen2" placeholder="Gender M(0),F(0)">
+<input type="number" id="sen3" name="sen3" placeholder="stream CS(0),IT(1),ECE(2),Mech(3),EEE(4)Civil(5)">
+<input type="number" id="sen4" name="sen4" placeholder="Internships">
+<input type="number" id="sen5" name="sen5" placeholder="CGPA">
+<input type="number" id="sen6" name="sen6" placeholder="Number of backlogs">
+<input type="submit" value="Submit">
+</form>
+</div>
+</div>
+</div>
+</section>
+<section id="hero" class="d-flex flex-column justify-content-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-8">
+<h1>The Prediction is: {{y}}</h1>
+<h2> 0 represents Not-Placed</h2>
+<h3> 1 represents Placed</h3>
+</div>
+</div>
+</div>
+</section>
+  </body>
+</html>
